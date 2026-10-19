@@ -2,7 +2,7 @@
  * COPYRIGHT:  2026
  * PROJECT:    PuzzleGame-Unity
  * FILE NAME:  ProjectileAbsorber.cs
- * DESCRIPTION: Puzzle system - removes projectiles that hit non-reflective surfaces.
+ * DESCRIPTION: Puzzle system - marks surfaces that absorb projectiles.
  *
  * REVISION HISTORY:
  * Date [YYYY/MM/DD] | Author | Comments
@@ -16,27 +16,9 @@ using UnityEngine;
 namespace CSG
 {
     /// <summary>
-    /// Destroys any projectile that touches this object.
+    /// Marks a surface that absorbs projectiles instead of bouncing them.
     /// </summary>
     public class ProjectileAbsorber : MonoBehaviour
     {
-        #region Fields & Properties
-
-        private const string PROJECTILE_TAG = "Projectile";
-
-        #endregion
-
-        #region Collision Events
-
-        // Called by Unity when something collides with this object.
-        private void OnCollisionEnter(Collision collision)
-        {
-            if (collision.gameObject.CompareTag(PROJECTILE_TAG))
-            {
-                Destroy(collision.gameObject);
-            }
-        }//end OnCollisionEnter(Collision)
-
-        #endregion
     }//end ProjectileAbsorber
 }
