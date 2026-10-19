@@ -166,8 +166,9 @@ GameObject:
   - component: {fileID: 101259378}
   - component: {fileID: 101259377}
   - component: {fileID: 101259376}
+  - component: {fileID: 101259379}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Wall_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,8 +183,8 @@ Transform:
   m_GameObject: {fileID: 101259374}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.5, y: 0.4, z: -0.6}
+  m_LocalScale: {x: 6.4, y: 0.8, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 187371036}
@@ -234,7 +235,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 822836d40c222ff42bee06d5423425ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -266,6 +267,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101259374}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &101259379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101259374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e25f8768c5341042bdb2e534c5189d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CSG.ProjectileAbsorber
 --- !u!1 &171325568
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,7 +808,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.2
+  orthographic size: 3.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1908,6 +1921,7 @@ GameObject:
   - component: {fileID: 657984285}
   - component: {fileID: 657984284}
   - component: {fileID: 657984283}
+  - component: {fileID: 657984286}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2008,6 +2022,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657984281}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &657984286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657984281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e25f8768c5341042bdb2e534c5189d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CSG.ProjectileAbsorber
 --- !u!1 &661733317
 GameObject:
   m_ObjectHideFlags: 0
@@ -3795,8 +3821,9 @@ GameObject:
   - component: {fileID: 1319106069}
   - component: {fileID: 1319106068}
   - component: {fileID: 1319106067}
+  - component: {fileID: 1319106070}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Wall_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3811,8 +3838,8 @@ Transform:
   m_GameObject: {fileID: 1319106065}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.5, y: 0.4, z: 5.6}
+  m_LocalScale: {x: 6.4, y: 0.8, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 187371036}
@@ -3863,7 +3890,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 822836d40c222ff42bee06d5423425ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3895,6 +3922,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319106065}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1319106070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319106065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e25f8768c5341042bdb2e534c5189d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CSG.ProjectileAbsorber
 --- !u!1 &1328327046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,8 +3946,9 @@ GameObject:
   - component: {fileID: 1328327050}
   - component: {fileID: 1328327049}
   - component: {fileID: 1328327048}
+  - component: {fileID: 1328327051}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Wall_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3923,8 +3963,8 @@ Transform:
   m_GameObject: {fileID: 1328327046}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.6, y: 0.4, z: 2.5}
+  m_LocalScale: {x: 0.2, y: 0.8, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 187371036}
@@ -3975,7 +4015,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 822836d40c222ff42bee06d5423425ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4007,6 +4047,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328327046}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1328327051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328327046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e25f8768c5341042bdb2e534c5189d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CSG.ProjectileAbsorber
 --- !u!1 &1343588079
 GameObject:
   m_ObjectHideFlags: 0
@@ -5567,8 +5619,9 @@ GameObject:
   - component: {fileID: 2075642077}
   - component: {fileID: 2075642076}
   - component: {fileID: 2075642075}
+  - component: {fileID: 2075642078}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Wall_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5583,8 +5636,8 @@ Transform:
   m_GameObject: {fileID: 2075642073}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.6, y: 0.4, z: 2.5}
+  m_LocalScale: {x: 0.2, y: 0.8, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 187371036}
@@ -5635,7 +5688,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 822836d40c222ff42bee06d5423425ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5667,6 +5720,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075642073}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2075642078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075642073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e25f8768c5341042bdb2e534c5189d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CSG.ProjectileAbsorber
 --- !u!1 &2124022715
 GameObject:
   m_ObjectHideFlags: 0
