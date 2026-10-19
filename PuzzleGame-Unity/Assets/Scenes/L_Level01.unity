@@ -2063,6 +2063,81 @@ Transform:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &617159302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617159303}
+  - component: {fileID: 617159305}
+  - component: {fileID: 617159304}
+  m_Layer: 0
+  m_Name: PuzzleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &617159303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617159302}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1161802192}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &617159304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617159302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2469f2e0317ca4d89988fa2867aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CSG.SceneLoader
+--- !u!114 &617159305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617159302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26abd6c9dc0e76b46845d384babce544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CSG.PuzzleManager
+  _targets:
+  - {fileID: 1498714570}
+  _solvedDelay: 1
+  _onPuzzleSolved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 617159304}
+        m_TargetAssemblyTypeName: CSG.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: L_EndScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &661733317
 GameObject:
   m_ObjectHideFlags: 0
@@ -3834,6 +3909,8 @@ Transform:
   - {fileID: 1307199457}
   - {fileID: 1498714566}
   - {fileID: 241433274}
+  - {fileID: 1958549379}
+  - {fileID: 617159303}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1253400929
@@ -4789,6 +4866,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 2100000, guid: afed03887e5e74748ab9c6ea9f936e62, type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 617159305}
+        m_TargetAssemblyTypeName: CSG.PuzzleManager, Assembly-CSharp
+        m_MethodName: CheckPuzzle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5806,6 +5895,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923508837}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1958549379 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+  m_PrefabInstance: {fileID: 2797615056810956272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1995512078
 GameObject:
   m_ObjectHideFlags: 0
@@ -6436,7 +6530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3862558626403410763, guid: e32d9dfc387265c408143bac6c2d75c0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3862558626403410763, guid: e32d9dfc387265c408143bac6c2d75c0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6444,7 +6538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3862558626403410763, guid: e32d9dfc387265c408143bac6c2d75c0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3862558626403410763, guid: e32d9dfc387265c408143bac6c2d75c0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -6456,7 +6550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3862558626403410763, guid: e32d9dfc387265c408143bac6c2d75c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3862558626403410763, guid: e32d9dfc387265c408143bac6c2d75c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6471,6 +6565,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e32d9dfc387265c408143bac6c2d75c0, type: 3}
+--- !u!1001 &2797615056810956272
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1161802192}
+    m_Modifications:
+    - target: {fileID: 1185558315807352349, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_Name
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032353852236212343, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 360b26636a4bb994f903e2a7b7bfdd89, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
