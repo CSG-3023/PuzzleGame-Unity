@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
-  m_PanelSettings: {fileID: 11400000, guid: 6f80c07efbcffac4380910b5aac93c8d, type: 2}
+  m_PanelSettings: {fileID: 11400000, guid: 42aa25736b322984d8a619a322092a3d, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 686e974a92b172842af516bf217084b7, type: 3}
   m_SortingOrder: 0
@@ -233,11 +233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4544aa1373db46c6811e67a5c135c805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CSG.Manager.MainMenuManager
-  _gameLevel: Level_Platform_01
-  _gameTitle: Awesome Game
-  _byline: 'Designed By: Me'
-  _instructionTxt: These are my instructions
-  _backgroundImage: {fileID: 0}
+  _gameLevel: L_Level01
+  _gameTitle: Ricochet Knight
+  _byline: 'Designed By: Elaina Martin'
+  _instructionTxt: WASD to move. Push the knights into position so your arrow reaches
+    the target.
 --- !u!1 &1070452029
 GameObject:
   m_ObjectHideFlags: 0
