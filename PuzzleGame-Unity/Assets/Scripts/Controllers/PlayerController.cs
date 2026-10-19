@@ -156,7 +156,8 @@ namespace CSG.Controller
             Vector3 horizontal = new Vector3(_rawInputVector.x, 0f, _rawInputVector.y) * _walkSpeed;
             Vector3 vertical = Vector3.up * _verticalVelocity;
 
-            return horizontal + vertical;
+            // Top-down puzzle: no jumping or falling, so ignore vertical movement.
+            return horizontal;
 
         } //end CalculateMovementVector()
 
