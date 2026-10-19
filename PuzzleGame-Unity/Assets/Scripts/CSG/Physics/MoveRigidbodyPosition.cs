@@ -46,6 +46,9 @@ namespace CSG
         /// <param name="velocity">The direction and speed to move, in units per second.</param>
         public void Move(Vector3 velocity)
         {
+            // Clear leftover push from collisions so the object doesn't drift.
+            _rigidbody.linearVelocity = Vector3.zero;
+            
             // Velocity is "per second," so scale it down to one physics step.
             Vector3 displacement = velocity * Time.fixedDeltaTime;
             _rigidbody.MovePosition(_rigidbody.position + displacement);

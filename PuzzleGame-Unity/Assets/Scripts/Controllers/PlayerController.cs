@@ -9,7 +9,7 @@
  * Date [YYYY/MM/DD] | Author | Comments
  * ------------------------------------------------------------
  * 2026/10/10 | Akram Taghavi-Burris | Created class
- *
+ * 2026/10/18 | Elaina Martin | Added movement component
  ************************************************************/
 
 using UnityEngine;
@@ -21,7 +21,7 @@ namespace CSG.Controller
     /// <summary>
     /// Controls character movement, jumping, and gravity using Unity's New Input System
     /// </summary>
-    [RequireComponent(typeof(GroundCheck))]
+    [RequireComponent(typeof(GroundCheck), typeof(MoveRigidbodyPosition))]
     public class PlayerController : MonoBehaviour
     {
         #region Fields & Properties
@@ -42,6 +42,7 @@ namespace CSG.Controller
         
         // Component references
         //Declare field for movement component
+        private MoveRigidbodyPosition _moveRigidbodyPosition;
         private GroundCheck _groundCheck;
         
         // Movement state tracking
@@ -57,9 +58,8 @@ namespace CSG.Controller
         private void Awake()
         {
             // Cache required component references
-            
             /* Try and get movement component */
-            
+            _moveRigidbodyPosition = GetComponent<MoveRigidbodyPosition>();
             _groundCheck = GetComponent<GroundCheck>();
 
         } //end Awake()
@@ -165,8 +165,13 @@ namespace CSG.Controller
         /// </summary>
         /// <param name="movementVector">The target 3D velocity vector.</param>
         private void ApplyMovement(Vector3 movementVector)
-        {
+        {   
             //send values to move component
+            if (_moveRigidbodyPosition != null)
+            {
+                _moveRigidbodyPosition.Move(movementVector);
+            }//end if(_moveRigidbodyPosition != null)
+            
 
         } //end ApplyMovement()
 
