@@ -4278,6 +4278,7 @@ GameObject:
   - component: {fileID: 946997111}
   - component: {fileID: 946997110}
   - component: {fileID: 946997109}
+  - component: {fileID: 946997113}
   m_Layer: 0
   m_Name: FiringPad
   m_TagString: Untagged
@@ -4316,18 +4317,6 @@ MonoBehaviour:
   _onEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1307199458}
-        m_TargetAssemblyTypeName: CSG.Launcher, Assembly-CSharp
-        m_MethodName: Fire
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 62717766}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
@@ -4344,6 +4333,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: CSG.PlayerAnimator, Assembly-CSharp
         m_MethodName: SetFacingLeft
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Fire
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 946997113}
+        m_TargetAssemblyTypeName: CSG.DelayedEvent, Assembly-CSharp
+        m_MethodName: StartDelay
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4430,6 +4431,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946997107}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &946997113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946997107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30582f857acc744e8fb8e5972203148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CSG.DelayedEvent
+  _delay: 0.2
+  _onDelayFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1307199458}
+        m_TargetAssemblyTypeName: CSG.Launcher, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &974510833
 GameObject:
   m_ObjectHideFlags: 0
@@ -5247,6 +5276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CSG.PlayerAnimator
   _animator: {fileID: 62717766}
   _spriteRenderer: {fileID: 62717765}
+  _facingLockTime: 0.7
 --- !u!1 &1022350543
 GameObject:
   m_ObjectHideFlags: 0
