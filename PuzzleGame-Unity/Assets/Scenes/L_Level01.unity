@@ -4443,7 +4443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e30582f857acc744e8fb8e5972203148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CSG.DelayedEvent
-  _delay: 0.2
+  _delay: 0.5
   _onDelayFinished:
     m_PersistentCalls:
       m_Calls:
