@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CSG.Controller.PlayerController">
+    <Position X="1.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCwAAAAgCAAAAAgAAFAAAAAAAAQAAAiAAAAAAAAHA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.DelayedEvent">
+    <Position X="13" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAABAAACAAAA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Behaviors\DelayedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.FaceMoveDirection">
+    <Position X="9.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAACgAAAAIAAAAAAAAAABEAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Behaviors\FaceMoveDirection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.PlayerAnimator">
+    <Position X="1.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAoAAAACIABAAAAAAAAAAAAAAICAABCAAAEA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Behaviors\PlayerAnimator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.PuzzleManager">
+    <Position X="5.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAgAAAAABAAAAAAAAAAAAgABACAAA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Behaviors\PuzzleManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.GridPushable">
+    <Position X="5.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAQAAAAAAAAAAAAAYAAAAoAAkAAEAAAAAAAEAgA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Physics\GridPushable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.Launcher">
+    <Position X="5.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAkAAAAAAAAAAAAAEAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Physics\Launcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.Projectile">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Physics\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.ProjectileAbsorber">
+    <Position X="5.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Physics\ProjectileAbsorber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.ShieldHitAnimator">
+    <Position X="9.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Physics\ShieldHitAnimator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.Target">
+    <Position X="5.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAIAAACAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Physics\Target.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.TriggerZone">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAEAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CSG\Physics\TriggerZone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSG.SceneLoader">
+    <Position X="13" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CSG\General\SceneLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
