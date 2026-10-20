@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7003194553864481221}
   - component: {fileID: -4122865689729237926}
   - component: {fileID: 6106579406046949990}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bolt
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8729162959604224992}
   - component: {fileID: 7638781805154018765}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arrow_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

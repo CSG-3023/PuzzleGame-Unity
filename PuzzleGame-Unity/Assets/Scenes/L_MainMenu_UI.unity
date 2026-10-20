@@ -236,8 +236,8 @@ MonoBehaviour:
   _gameLevel: L_Level01
   _gameTitle: Ricochet Knight
   _byline: 'Designed By: Elaina Martin'
-  _instructionTxt: WASD to move. Push the knights into position so your arrow reaches
-    the target.
+  _instructionTxt: WASD to move. Push the knights into position so your arrow can
+    reach the pumpkin.
 --- !u!1 &1070452029
 GameObject:
   m_ObjectHideFlags: 0
